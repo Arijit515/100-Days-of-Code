@@ -7,10 +7,8 @@ void reverseString(std::vector<char>& s) {
     int right = s.size() - 1;
 
     while (left < right) {
-        // Swap characters at left and right indices
+    
         std::swap(s[left], s[right]);
-
-        // Move the pointers towards the center
         left++;
         right--;
     }
@@ -24,7 +22,6 @@ int main() {
     std::vector<char> s(input.begin(), input.end());
     reverseString(s);
 
-    // Print the reversed string
     for (char ch : s) {
         std::cout << ch;
     }
